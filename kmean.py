@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Use 'Agg' backend for non-interactive mode
 import matplotlib.pyplot as plt
 import plotly.express as px
 from sklearn.cluster import KMeans

@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')  # Use 'Agg' backend for non-interactive mode
-import matplotlib.pyplot as plt
 import plotly.express as px
 from sklearn.cluster import KMeans
 
@@ -27,13 +24,6 @@ for best_k in k_values:
     )
     kmeans.fit(X)
     inertia_values.append(kmeans.inertia_)
-
-# Plot the elbow curve to find the optimal k value
-plt.plot(k_values, inertia_values, marker="o")
-plt.xlabel("Number of Clusters (k)")
-plt.ylabel("Inertia")
-plt.title("Elbow Curve")
-
 
 st.set_option("deprecation.showPyplotGlobalUse", False)
 elbo_plot = st.pyplot()

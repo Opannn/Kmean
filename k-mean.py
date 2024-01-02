@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import plotly.express as px
 from sklearn.cluster import KMeans
 
 st.write("<h1 style='color: blue;'>Unsupervised Learning on Country Data</h1>", unsafe_allow_html=True)

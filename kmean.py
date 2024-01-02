@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import sklearn.cluster as KMeans
 
 df = pd.read_csv("Country-data.csv")
 

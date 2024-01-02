@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 from sklearn.cluster import KMeans
 
 df = pd.read_csv("Country-data.csv")
